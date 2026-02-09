@@ -1,0 +1,31 @@
+{
+  "name": "launch",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "dev": "netlify dev",
+    "dev:client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "migrate": "knex migrate:latest --knexfile ./knexfile.cjs",
+    "migrate:make": "knex migrate:make --knexfile ./knexfile.cjs",
+    "create:user": "node ./scripts/create-user.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "pg": "^8.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "netlify-cli": "^17.28.3",
+    "vite": "^5.4.2"
+  }
+}
